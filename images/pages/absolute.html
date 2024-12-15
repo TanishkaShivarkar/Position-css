@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Absolute Position</title>
+  <style>
+    .absolute-container {
+      height: 100vh;
+      position: relative;
+      background-color: #f5f5f5;
+      padding: 10px
+    
+    }
+    .food-wrapper {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      text-align: center;
+    }
+
+    .food-img{
+      width: 200px;
+      height: 200px;
+      border: solid;
+      border-radius: 10px;
+
+    }
+    .h3, .h5 {
+      margin: 5px 0;
+      color: #333;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .h3 {
+      top: 210px;
+      font-size: 1.5rem;
+    }
+
+    .h5 {
+      font-size: 1rem;
+      font-style: italic;
+      top: 240px;
+    }
+
+    .arrow-img {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .arrow {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Absolute Position</h1>
+  <div class="absolute-container">
+    <div class="food-wrapper">
+    <img class= "food-img" src="./../ramen img.jpg" alt="Ramen">
+    <h3 class="h3">Ramen</h3>
+    <h5 class="h5">(South Korea)</h5>
+  </div>
+</div>
+
+<div class= "arrow-img">
+  <a href="./sticky.html">
+ <img class= "arrow" src="./../next.png" alt="next arrow" ></a>
+</a>
+</body>
+</html>
